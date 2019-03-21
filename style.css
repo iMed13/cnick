@@ -1343,12 +1343,6 @@ main .features_list .each_feature {
   transition: all 0.5s;
 }
 
-main .features_list .each_feature:hover {
-  cursor: pointer;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-
 main .features_list .each_feature p {
   font-size: 20px;
   padding: 20px 0;
