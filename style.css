@@ -936,6 +936,50 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
+.full_video .exit_video {
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  top: 40px;
+  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 999999999999999;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.full_video .exit_video:hover {
+  -webkit-transform: translate(-50%, -50%) rotate(-180deg) !important;
+          transform: translate(-50%, -50%) rotate(-180deg) !important;
+}
+
+.full_video .exit_video:after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.full_video .exit_video:before {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 header {
   min-height: 95vh;
   height: 100%;

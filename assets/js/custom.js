@@ -13,11 +13,17 @@ $(".faq_title").on("click", function(){
     $(this).siblings(".faq_description").toggleClass("active_faq_description");
     $(this).toggleClass("active_faq_title");
 });
+$(".exit_video").on("click", function(){
+  
+  $(".full_video").toggleClass("active_full_video");
+  $(".full_video").toggleClass("video_h");
+  setTimeout(function(){ $(".full_video").toggleClass("video_w"); }, 500);
+});
 $(".show_video").on("click", function(){
   
-  $(".full_video").addClass("active_full_video");
-  setTimeout(function(){ $(".full_video").addClass("video_w"); }, 500);
-  setTimeout(function(){ $(".full_video").addClass("video_h"); }, 1000);
+  $(".full_video").toggleClass("active_full_video");
+  setTimeout(function(){ $(".full_video").toggleClass("video_w"); }, 500);
+  setTimeout(function(){ $(".full_video").toggleClass("video_h"); }, 1000);
 });
 var aosAn;
 var faqLength = document.getElementsByClassName("faq_tab");
