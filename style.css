@@ -1184,6 +1184,7 @@ header nav ul li a {
   width: 100%;
   height: 100%;
   color: #fff;
+  font-family: NotoSansGeorgianReg,  Poppins !important;
 }
 
 header nav ul li a:hover {
@@ -1356,15 +1357,63 @@ main .features_list .each_feature .fas {
   color: #332C60;
 }
 
-main .share_information, main .access_badges, main .ring_quality {
+main .ring_collage #demos .item {
+  cursor: -webkit-grabbing  !important;
+  cursor: grabbing  !important;
+  width: 100% !important;
+  padding: 15px !important;
+}
+
+main .ring_collage #demos .item .item_cont {
+  padding: 15px !important;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 18px 0px !important;
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 18px 0px !important;
+}
+
+main .ring_collage #demos .item .item_cont .ring_image {
+  overflow: hidden;
+  text-align: center;
+}
+
+main .ring_collage #demos .item .item_cont .ring_image img {
+  width: 100% !important;
+}
+
+main .ring_collage #demos .item .item_cont .ring_price {
+  text-align: center;
+  padding: 5px 0;
+  color: #060033;
+  font-size: 20px;
+}
+
+main .ring_collage #demos .item .item_cont .ring_curency {
+  text-transform: uppercase;
+  color: #00d3bd !important;
+  font-size: 17px;
+}
+
+main .ring_collage #demos .item .item_cont .ring_name {
+  color: #3D3863;
+  font-size: 14px;
+}
+
+main .share_information, main .access_badges, main .ring_quality, main .ring_collage {
   padding: 50px 0;
 }
 
-main .share_information .aos-init, main .access_badges .aos-init, main .ring_quality .aos-init {
+main .share_information h2, main .access_badges h2, main .ring_quality h2, main .ring_collage h2 {
+  text-align: left;
+  padding: 15px;
+  color: #00d3bd !important;
+  text-transform: capitalize;
+}
+
+main .share_information .aos-init, main .access_badges .aos-init, main .ring_quality .aos-init, main .ring_collage .aos-init {
   text-align: center !important;
 }
 
-main .share_information .left, main .access_badges .left, main .ring_quality .left {
+main .share_information .left, main .access_badges .left, main .ring_quality .left, main .ring_collage .left {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -1372,14 +1421,14 @@ main .share_information .left, main .access_badges .left, main .ring_quality .le
 }
 
 @media (max-width: 992px) {
-  main .share_information .left, main .access_badges .left, main .ring_quality .left {
+  main .share_information .left, main .access_badges .left, main .ring_quality .left, main .ring_collage .left {
     -webkit-box-ordinal-group: unset !important;
         -ms-flex-order: unset !important;
             order: unset !important;
   }
 }
 
-main .share_information .right, main .access_badges .right, main .ring_quality .right {
+main .share_information .right, main .access_badges .right, main .ring_quality .right, main .ring_collage .right {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -1387,28 +1436,28 @@ main .share_information .right, main .access_badges .right, main .ring_quality .
 }
 
 @media (max-width: 992px) {
-  main .share_information .right, main .access_badges .right, main .ring_quality .right {
+  main .share_information .right, main .access_badges .right, main .ring_quality .right, main .ring_collage .right {
     -webkit-box-ordinal-group: unset !important;
         -ms-flex-order: unset !important;
             order: unset !important;
   }
 }
 
-main .share_information img, main .access_badges img, main .ring_quality img {
+main .share_information img, main .access_badges img, main .ring_quality img, main .ring_collage img {
   margin: 0 auto;
   width: 100%;
   max-width: 500px;
   border-radius: 5px;
 }
 
-main .share_information .shareinfo_title h3, main .share_information .access_badges_title h3, main .share_information .ring_quality_title h3, main .access_badges .shareinfo_title h3, main .access_badges .access_badges_title h3, main .access_badges .ring_quality_title h3, main .ring_quality .shareinfo_title h3, main .ring_quality .access_badges_title h3, main .ring_quality .ring_quality_title h3 {
+main .share_information .shareinfo_title h3, main .share_information .access_badges_title h3, main .share_information .ring_quality_title h3, main .access_badges .shareinfo_title h3, main .access_badges .access_badges_title h3, main .access_badges .ring_quality_title h3, main .ring_quality .shareinfo_title h3, main .ring_quality .access_badges_title h3, main .ring_quality .ring_quality_title h3, main .ring_collage .shareinfo_title h3, main .ring_collage .access_badges_title h3, main .ring_collage .ring_quality_title h3 {
   text-align: left;
   padding: 0 15px;
   color: #00d3bd !important;
   text-transform: capitalize;
 }
 
-main .share_information p, main .access_badges p, main .ring_quality p {
+main .share_information p, main .access_badges p, main .ring_quality p, main .ring_collage p {
   padding: 20px 30px;
   text-align: justify;
   color: #332C60;

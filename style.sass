@@ -257,6 +257,7 @@ header
           width: 100%
           height: 100%
           color: #fff
+          font-family: NotoSansGeorgianReg,  Poppins !important
           &:hover
             color: #00d3bd !important
   .login_form
@@ -345,9 +346,40 @@ main
       .fas
         font-size: 50px
         color: #332C60 
-        
-  .share_information,.access_badges, .ring_quality
-    padding: 50px 0
+  .ring_collage
+    #demos
+      .item
+        cursor: grabbing  !important
+        width: 100% !important
+        padding: 15px!important
+        .item_cont
+          padding: 15px !important
+          border-radius: 10px
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 18px 0px !important
+          .ring_image
+            overflow: hidden
+            text-align: center
+            img
+              width: 100% !important
+          .ring_price
+            text-align: center
+            padding: 5px 0
+            color: #060033
+            font-size: 20px
+          .ring_curency
+            text-transform: uppercase
+            color: #00d3bd !important
+            font-size: 17px
+          .ring_name
+            color: #3D3863
+            font-size: 14px
+  .share_information,.access_badges, .ring_quality, .ring_collage
+    padding: 50px 0 
+    h2
+      text-align: left
+      padding: 15px
+      color: #00d3bd !important
+      text-transform: capitalize
     .aos-init
       text-align: center !important
     .left

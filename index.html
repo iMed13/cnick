@@ -14,6 +14,8 @@
     <title>cnick</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -67,6 +69,7 @@
                 <div class="mouse_roll"></div>
             </div>
         </section>
+        
         <section class="container">
             <section class="bottom_buttons">
                 <button type="submit"><i class="fas fa-store"></i>shop now</button>
@@ -208,8 +211,41 @@
                 </div>
             </section>
             <!-- -------------------------------- -->
-            <section class="ring_collage">
-
+            
+            <section class="ring_collage"> 
+                <h2>There's CNICK ring for everyone</h2>
+                <section id="demos">
+                    <div class="row">
+                      <div class="large-12 columns col-lg-12">
+                        <div class="owl-carousel owl-theme">
+                          <section class="item">
+                             <section class="item_cont">
+                                    <article class="ring_image"><img src="assets/media/slideRing.jpg" alt=""></article>
+                                    <article class="ring_price">100$</article>
+                                    <article class="ring_curency">BTC</article>
+                                    <article class="ring_name">Oxford Blue</article>
+                             </section>
+                          </section>
+                          <section class="item">
+                             <section class="item_cont">
+                                    <article class="ring_image"><img src="assets/media/slideRing1.jpg" alt=""></article>
+                                    <article class="ring_price">100$</article>
+                                    <article class="ring_curency">ETH</article>
+                                    <article class="ring_name">Hawaiian Koa</article>
+                             </section>
+                          </section>
+                          <section class="item">
+                             <section class="item_cont">
+                                    <article class="ring_image"><img src="assets/media/slideRing1.jpg" alt=""></article>
+                                    <article class="ring_price">100$</article>
+                                    <article class="ring_curency">LTC</article>
+                                    <article class="ring_name">Hawaiian Koa</article>
+                             </section>
+                          </section>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
             </section>
             <!-- -------------------------------- -->
         </section>
@@ -253,6 +289,8 @@
 
 
     <!-- -------------------S C R I P T S ------------------------------ -->
+    
+<script src="assets/js/custom.js"></script>
     <!-- bootsrap scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -262,13 +300,37 @@
         crossorigin="anonymous"></script>
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- javascript -->
+    <script src="assets/assets/vendors/jquery.min.js"></script>
+    <script src="assets/assets/owlcarousel/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function() {
+          var owl = $('.owl-carousel');
+          owl.owlCarousel({
+            margin: 10,
+            nav: true,
+            loop: true,
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 2
+              },
+              1000: {
+                items: 3
+              }
+            }
+          })
+        })
+      </script>
+    <!-- vendors -->
+    <script src="assets/assets/vendors/highlight.js"></script>
+    <script src="assets/assets/js/app.js"></script>
     <!-- AOS Animation -->
     <script>
         AOS.init();
       </script>
-
-    
-<script src="assets/js/custom.js"></script>
 </body>
 
 </html>
