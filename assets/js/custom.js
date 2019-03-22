@@ -13,6 +13,10 @@ $(".faq_title").on("click", function(){
     $(this).siblings(".faq_description").toggleClass("active_faq_description");
     $(this).toggleClass("active_faq_title");
 });
+$(".header_hamburg").on("click", function(){
+  $("header ul").toggleClass("header_ul_active");
+});
+
 $(".exit_video").on("click", function(){
   
   $(".full_video").toggleClass("active_full_video");
@@ -33,6 +37,7 @@ for( aosAn=100; aosAn<=(faqLength.length * 50); aosAn+=50)
   faqLength[faqQuant].setAttribute("data-aos-delay", aosAn);
   faqQuant++;
 }
+
 /* ---- particles.js config ---- */
 
 particlesJS("particles-js", {
