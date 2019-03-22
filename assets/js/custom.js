@@ -4,6 +4,9 @@
 //     $(this).addClass("disabled_mus_buts");
    
 // }); 
+
+
+//----------------------------------------
 $(".faq_main").siblings("header").addClass("faq_header");
 $(".about_main").siblings("header").addClass("faq_header");
 $(".contact_main").siblings("header").addClass("faq_header");
@@ -18,7 +21,9 @@ $(".header_hamburg").on("click", function(){
 });
 
 $(".exit_video").on("click", function(){
-  
+  var leg=$("#info_video").attr("src");
+    $("#info_video").attr("src",leg); 
+
   $(".full_video").toggleClass("active_full_video");
   $(".full_video").toggleClass("video_h");
   setTimeout(function(){ $(".full_video").toggleClass("video_w"); }, 500);
